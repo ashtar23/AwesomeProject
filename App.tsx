@@ -7,6 +7,7 @@
 
 import React from 'react';
 import type {PropsWithChildren} from 'react';
+import Constants from 'expo-constants';
 import {
   SafeAreaView,
   ScrollView,
@@ -31,6 +32,8 @@ type SectionProps = PropsWithChildren<{
 
 function Section({children, title}: SectionProps): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
+
+  console.log(Constants.systemFonts);
   return (
     <View style={styles.sectionContainer}>
       <Text
