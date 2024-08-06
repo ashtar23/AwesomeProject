@@ -53,7 +53,8 @@
     "react-native-image-crop-picker": "0.40.2",
     "react-native-inappbrowser-reborn": "3.7.0",
     "react-native-keyboard-aware-scroll-view": "0.9.5",
-    "react-native-linear-gradient": "3.0.0-alpha.1"
+    "react-native-linear-gradient": "3.0.0-alpha.1",
+    "react-native-passkey": "3.0.0-beta2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
