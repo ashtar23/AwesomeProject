@@ -1,0 +1,13 @@
+diff --git a/node_modules/react-native-passkey/android/build.gradle b/node_modules/react-native-passkey/android/build.gradle
+index 0b7f9e8..0d62e6a 100644
+--- a/node_modules/react-native-passkey/android/build.gradle
++++ b/node_modules/react-native-passkey/android/build.gradle
+@@ -142,7 +142,7 @@ dependencies {
+ 
+ if (isNewArchitectureEnabled()) {
+   react {
+-    jsRootDir = file("../src/")
++    jsRootDir = file("../lib/commonjs/")
+     libraryName = "Passkey"
+     codegenJavaPackageName = "com.reactnativepasskey"
+   }

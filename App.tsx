@@ -26,6 +26,8 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import {Passkey} from 'react-native-passkey';
+
 type SectionProps = PropsWithChildren<{
   title: string;
 }>;
@@ -61,9 +63,13 @@ function Section({children, title}: SectionProps): React.JSX.Element {
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
 
+  const isSupported: boolean = Passkey.isSupported();
+
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
+
+  console.log('isSupported', isSupported);
 
   return (
     <SafeAreaView style={backgroundStyle}>
